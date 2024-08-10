@@ -1,19 +1,19 @@
 <?php
 /*
 Plugin Name: Shipping Price Calculator
-Description: Plugin do obliczania ceny przesyłki na podstawie wymiarów paczki.
+Description: Plugin do obliczania ceny przesyłki na podstawie wymiarów paczki przekazanych do API - zadanie rekrutacyjne non.agency.
 Version: 1.0
-Author: Twoje Imię
+Author: Otu
 */
 
 if (!defined('ABSPATH')) {
     exit;
 }
 
-// Ładowanie klasy głównej pluginu
+//ładowanie klasy głównej pluginu
 require_once plugin_dir_path(__FILE__) . 'includes/class-shipping-price-calculator.php';
 
-// Inicjalizacja pluginu
+//inicjalizacja pluginu
 function spc_init() {
     $spc = new Shipping_Price_Calculator();
 }
