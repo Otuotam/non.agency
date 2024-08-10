@@ -1,0 +1,51 @@
+#spc-calculator-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: #c1c1c1 1px solid;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px 0px #000;
+    padding: 1em;
+    max-width: 520px;
+    min-width: 320px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(125deg, rgb(252, 252, 252) 0%, rgb(255, 255, 255) 1%, rgb(233, 226, 226) 41%, rgb(243, 243, 243) 100%);
+    backdrop-filter: blur(10px);
+}
+#spc-calculator-form label, #spc-calculator-form input{
+    width: 100%;
+    font-weight: 600;
+}
+
+#spc-calculator-form label{
+    margin-top: 20px;
+}
+
+#spc-calculator-form input{
+    padding: 1em;
+    text-align: center;
+}
+
+#spc-calculator-form button{
+    margin-top: 20px;
+    color: #c36;
+    border: 1px solid #c36;
+    box-shadow: 0px 0px 5px 0px #c36;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 0.6s ease;
+}
+
+#spc-calculator-form button:hover{
+    margin-top: 20px;
+    color: #fff;
+    background-color: rgb(204, 51, 102);
+}
+
+#spc-result{
+    width: 100%;
+    max-width: 520px;
+    min-width: 320px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+}
