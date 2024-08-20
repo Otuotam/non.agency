@@ -24,6 +24,7 @@ class Shipping_Price_Calculator {
 
     //wczytanie pliku z formularzem
     public function display_form() {
+        if(defined('REST_REQUEST')) return;
         $template_path = plugin_dir_path(__FILE__) . '../templates/form-shipping-price.php';
         if (file_exists($template_path)) {
             include $template_path;
@@ -105,7 +106,6 @@ class Shipping_Price_Calculator {
         wp_die();
 
     }
-    
     
     //dodanie assetów js i css
     public function enqueue_scripts() {
